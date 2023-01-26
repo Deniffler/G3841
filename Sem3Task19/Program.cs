@@ -6,10 +6,10 @@
 int FiveNumDig = ReadData("Введите 5-ти значное число");
 
 // Вызываем метод PaliTest и скармливаем ему переменную FiveNumDig
-PaliTest(FiveNumDig);
+bool answer = PaliTest(FiveNumDig);
 //Выводим ответ пользователю на экран
-Console.WriteLine(res);
-
+if(answer == true) PrintData("Число: " + FiveNumDig + " является палиндромом :))");
+if(answer == false) PrintData("Число: " + FiveNumDig + " не является палиндромом :((");
 //---------------------------------------------------------------------------------------
 // Код ниже это Методы (функции)
 
@@ -34,7 +34,7 @@ int ReadData(string msg)
 }
 
 //Метод выводит результат пользователю
-// void PrintData(string msg )
-// {
-//     Console.WriteLine(msg);
-// }
+void PrintData(string msg )
+{
+    Console.WriteLine(msg);
+}
