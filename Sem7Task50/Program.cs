@@ -10,21 +10,6 @@ int ReadData(string msg)
     return int.Parse(Console.ReadLine() ?? "0");
 }
 
-// // Функция (Метод) вывода 2D  массива в консоль
-// void Print2DArr(int[,] arr)
-// {
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < arr.GetLength(1); j++)
-//         {
-//             Console.ForegroundColor = (ConsoleColor)(new System.Random().Next(0, 16));
-//             Console.Write(arr[i, j] + "\t");
-//             Console.ResetColor();
-//         }
-//         Console.WriteLine("");
-//     }
-// }
-
 
 // Функция (Метод) генерации 2D массива числами Фиббоначи
 int[,] Gen2DArrFibo(int column, int row)
